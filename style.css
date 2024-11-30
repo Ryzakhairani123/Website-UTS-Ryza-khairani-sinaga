@@ -1,0 +1,164 @@
+. {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: peru;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    margin-top: 38px;
+    margin-left: 40px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: rgb(155, 14, 85);
+}
+
+input {
+    padding: 0.3rem 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "nav nav main main main main main"
+    "nav nav aside aside section1 section1 section2"
+    "nav nav footer footer footer footer footer";
+}
+
+nav {
+    grid-area: nav;
+    width: 200px;
+    height: auto;
+    padding: 47px;
+    margin-left: 40px;
+    background-color: rgb(155, 14, 85);
+}
+
+nav a {
+    display: block;
+    padding: 19px 53px;
+    color: azure;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: darkgoldenrod;
+}
+
+nav .keluar{
+    color: black;
+}
+
+main {
+    grid-area: main;
+    width: 984px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(155, 14, 85);
+    margin-left: 1rem;
+}
+
+.title {
+    margin-left: 10px;
+    color: azure;
+}
+
+.title p{
+    margin-top: 8px;
+}
+
+.profil img {
+    width: 150px;
+    height: 150px;
+    margin: 1rem;
+    border-radius: 50%;
+}
+
+aside {
+    grid-area: aside;
+    width: fit-content500px;
+    margin-left: 1rem;
+    background-color: palevioletred;
+    margin-top: 10px;
+}
+
+aside h3 {
+    margin-top: 10px;
+    margin-left: 6px;
+}
+
+aside img {
+    width: 450px;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 6px;
+    border-radius: 5px;
+}
+
+.section1 {
+    grid-area: section1;
+    margin-top: 10px;
+    background-color: rgb(155, 14, 85);
+    width: 200px;
+}
+
+.matkul,
+.aktifitas {
+    background-color: lightpink;
+}
+
+.section1 h3,
+.matkul,
+.section2 h3,
+.aktifitas{
+    margin: 10px;
+}
+
+.matkul p,
+.aktifitas p{
+    margin-top: 10px;
+    color: black;
+}
+
+.section2 {
+    grid-area: section2;
+    margin-top: 10px;
+    background-color: rgb(155, 14, 85);
+    width: 240px;
+}
+
+footer {
+    grid-area: footer;
+    margin-top: 10px;
+    margin-left: 1rem;
+    width: 984px;
+    background-color: rgb(155, 14, 85);
+}
+
+footer h3, p {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+footer p span {
+    color: blue;
+    font-weight: bold;
+}
+
+footer p {
+    background-color: lightpink;
+    height: 50px;
+    align-content: center;
+}
